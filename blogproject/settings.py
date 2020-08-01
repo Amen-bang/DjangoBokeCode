@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '444-)-@(mdzbg+d*mrh1qizj#(&+b)&^zk@60^pxd0ockx1xcs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # 只允许通过 127.0.0.1，localhost 以及 zmrenwu.com 和其任意子域名（域名前加一个点表示允许访问该域名下的子域名）访问
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.chenbangbang.top']
