@@ -4,13 +4,15 @@ import markdown
 from markdown.extensions.toc import TocExtension, slugify
 import re
 from django.views.generic import ListView, DetailView
+from pure_pagination import PaginationMixin
 
 
-class IndexView(ListView):
+class IndexView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
     paginate_by = 10
+
 
 
 class CategoryView(IndexView):
