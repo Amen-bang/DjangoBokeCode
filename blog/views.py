@@ -1,3 +1,5 @@
+from django.db.models import Q
+
 from .models import Post,Category,Tag
 from django.shortcuts import render, get_object_or_404, redirect
 import markdown
