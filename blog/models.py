@@ -96,7 +96,7 @@ class Post(models.Model):
         self.views += 1
         self.save(update_fields=["views"])
 
-    @property
+    #@property
     def toc(self):
         return self.rich_content.get("toc", "")
 
